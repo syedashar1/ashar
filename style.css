@@ -1,0 +1,343 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+header{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 160px;
+}
+
+header h1{
+  font-family: cursive;
+  font-size: 90px;
+}
+header p{
+  font-family:monospace;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.softbutton
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    color: #d9976e;
+    font-size: 30px;
+    border-radius: 40px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(231, 113, 113, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.softbutton:hover
+{
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.softbutton:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+
+.skills{
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 650px;
+  padding: 70px 20px;
+  font-size: 25px;
+}
+
+.skills h1 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.skills span {
+  font-size: 45px;
+  font-family:monospace;
+  padding: 0 20px 0 0px;
+  cursor: pointer;
+
+}
+.skills span:hover{
+  color: #d9976e;
+}
+
+
+
+
+.mycard{
+  background-color: rgba(15, 15, 15, 0.7);
+
+  min-height: 600px;
+  max-width: 500px;
+  -webkit-box-shadow: 0px 0px 80px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 80px -17px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 80px -17px rgba(0,0,0,0.75);
+  transition: .2s;
+  margin: 20px;
+
+}
+.cardpic{
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cardtext{
+  padding: 5px;
+}
+.cardtext p{
+  font-size: 20px;
+}
+
+
+.projects{
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 650px;
+  padding: 40px 0px;
+  font-size: 25px;
+}
+
+.projects h1 {
+
+  font-family: cursive;
+  font-size: 60px;
+  text-align: center;
+
+}
+
+
+.work{
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 650px;
+  margin-bottom: 300px;
+  padding: 40px 10px;
+  font-size: 25px;
+}
+
+.work h1 {
+  font-family: cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px ;
+  border-radius: 5px;
+  opacity:0.7;
+}
+
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-github {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.contact {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin-top: 300px;
+  margin-bottom: 760px;
+}
+.contact p {
+  font-size: 30px;
+  font-family:monospace;
+}
+.contact h1 {
+  font-family: cursive;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.contactx {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  margin-bottom: 450px;
+}
+.contactx p {
+  font-size: 30px;
+  font-family:monospace;
+}
+.contactx h1 {
+  font-family: cursive;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.btn-danger{
+  background-color: '0xffffff' !important;
+}
+
+
+
+.mycard a {
+  color: white;
+}
